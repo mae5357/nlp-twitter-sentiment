@@ -58,3 +58,25 @@ https://www.machinelearningplus.com/nlp/gensim-tutorial/#8howtocreatethetfidfmat
 
 - bag of words -> tf-idf -> LDA
 - LSA learns latent topics by performing a matrix decomposition on the document-term matrix using Singular value decomposition. LSA is typically used as a dimension reduction or noise-reducing technique.
+
+## Vocab
+
+```dictionary = corpora.Dictionary(texts)```
+Before proceeding, we want to associate each word in the corpus with a unique integer ID.
+
+## bag of words
+
+```
+bow_corpus = [dictionary.doc2bow(text) for text in processed_corpus]
+pprint.pprint(bow_corpus)
+```
+
+[[(0, 1), (1, 1), (2, 1)],
+ [(0, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1)],
+ [(2, 1), (5, 1), (7, 1), (8, 1)],
+ [(1, 1), (5, 2), (8, 1)],
+ [(3, 1), (6, 1), (7, 1)],
+ [(9, 1)],
+ [(9, 1), (10, 1)],
+ [(9, 1), (10, 1), (11, 1)],
+ [(4, 1), (10, 1), (11, 1)]]
