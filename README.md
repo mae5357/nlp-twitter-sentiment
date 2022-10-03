@@ -8,6 +8,12 @@
   I have been able to also explore a few NLP packages such as NLTK,
   gensim, and Hugging Face.
   
+  This repo is a work in progress and will continue to be updated. Eventually the models will be hosted in a container and will be publicly avalible through AWS Sagemaker.
+  
+  
+  **Getting Started**
+  
+  Open `twitter_notebook.ipynb` to get started.
   
   
   
